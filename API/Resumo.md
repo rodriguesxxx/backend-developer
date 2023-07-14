@@ -6,7 +6,7 @@ API ou Application Programming Interface é uma forma de comunicacao entre dois 
 
 **O que isso tem haver com micro-servicos?**
 
-Micro-Services é um tipo de arquitetura de software que tem como objetivo quebrar o projeto em diferentes partes e é utilizado apis para isso. Como por exemplo um sistema de ToDo list. Não padrao de micro-servivos teria que ter uma api para o login do usuario e outra api para a manipulacao das tarefas(criar/excluir/editar). 
+Micro-Services é um tipo de arquitetura de software que tem como objetivo quebrar o projeto em diferentes partes e é utilizado apis para isso. Como por exemplo um sistema de ToDo list. No padrao de micro-servivos teria que ter uma api para o login do usuario e outra api para a manipulacao das tarefas(criar/excluir/editar). 
 
 **Arquiterura Monolitica**
 
