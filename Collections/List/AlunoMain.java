@@ -10,10 +10,10 @@ class Aluno implements Comparable<Aluno>{
         this.nota = nota;
     }
 
-    // @Override
-    // public String toString(){
-    //     return "nome: "+this.nome+" / nota: "+this.nota;
-    // }
+    @Override
+    public String toString(){
+        return "nome: "+this.nome+" / nota: "+this.nota;
+    }
 
     @Override
     public int compareTo(Aluno aluno){
