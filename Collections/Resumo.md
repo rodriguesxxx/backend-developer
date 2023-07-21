@@ -226,3 +226,65 @@ public class ArrayDequeExemple {
 }
 
 ```
+
+## Set
+
+Uma interface, que não permite valores duplicados. E é bem mais rapida que a interface List. Inserção mais lenta.
+
+#### TreeSet
+
+Classe que Implementa interface set
+
+##### exemple:
+```java
+public class Test {
+
+    public static Random generate = new Random();
+
+    public static String TreeSet(){
+
+        Set<Integer> numbers = new TreeSet<>();
+        for(int i = 10; i > 0; i--){
+            numbers.add(
+                generate.nextInt(1000)
+            ); //adiciona os numeros de forma ordenada
+        }
+        return numbers.toString(); //resultado: muda a cada execucao
+    }
+    public static void main(String[] args){
+        System.out.println(TreeSet());
+    }
+}
+```
+
+#### HashSet
+
+Tambem implementa a interfacce set. Sendo mais rapido para acesso aos dados do que TreeSet, mas não garante que os dados sejam ordenados
+
+##### exemple
+
+```java
+public class Test {
+
+    public static Random generate = new Random();
+
+    public static String HashSet(){
+        Set<Integer> numbers = new HashSet<>();
+        int cont = 10;
+        while(cont > 0){
+            numbers.add(
+                generate.nextInt(1000)
+            ); //os numeros nao sao ordenados
+            cont--;
+        }
+        return numbers.toString(); //resultado: muda a cada execucao
+    }
+    public static void main(String[] args){
+        System.out.println(HashSet());
+    }
+}
+```
+
+#### LinkedHashSet
+
+A junção do TreeSet e do HashSet
