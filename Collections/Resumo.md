@@ -156,3 +156,73 @@ public class Performace {
 ```
 
 ## Queue(Filas)
+
+As filas sao estruturadas da seguinte forma:
+
+    input |---------------| output
+
+    Ou seja, o elemento entra do lado esquerdo e sai pelo direito. Isso é chamado de FIFO(First-in, Firtst-out)
+
+#### PriorityQueue
+Está é uma class que implementa a interface Queue;
+
+
+### Deque
+
+Essa é uma interface que extende a interface Queue. Mas sua estrutura é diferente:
+        
+    input|output ---------------- output|input
+
+Pode entrar ou sair dados de ambos os lados.
+
+#### ArrayDeque
+
+Classe que implementa a interface Deque que por sua vez extende a interface Queue. Entao ArrayDeque tem metodos das duas.
+
+### Exemplos
+
+```java
+import java.util.Queue;
+import java.util.PriorityQueue;
+
+public class PriorityQueueExemple {
+    public static void main(String[] args){
+        Queue<Integer> filaOne = new PriorityQueue<Integer>();
+        filaOne.add(10);
+        filaOne.add(4);
+        filaOne.add(8);
+        filaOne.add(2);
+
+        //os elementos sao ordenadas de forma automatica.
+
+        while(filaOne.size() != 0)
+            System.out.println(filaOne.remove());
+    }
+}
+```
+
+
+
+```java
+import java.util.Deque;
+import java.util.ArrayDeque;
+
+public class ArrayDequeExemple {
+    public static void main(String[] args){
+        Deque<Integer> filaOne = new ArrayDeque<Integer>();
+        filaOne.add(10);
+        filaOne.add(4);
+        filaOne.add(8);
+        filaOne.add(2);
+
+        Deque<Integer> filaTwo = new ArrayDeque<Integer>();
+        filaTwo.add(22);
+        filaTwo.addAll(filaOne);
+        System.out.println(filaTwo);
+
+        while(filaTwo.size() != 0)
+            System.out.println(filaOne.remove());
+    }
+}
+
+```
