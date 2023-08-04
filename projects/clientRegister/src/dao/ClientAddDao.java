@@ -5,7 +5,7 @@ import java.util.Random;
 import models.Client;
 import database.ClientDB;
 
-public class ClientSetDao{
+public class ClientAddDao {
 
 
 
@@ -38,7 +38,7 @@ public class ClientSetDao{
         Integer id;
 
         do{
-            id = generator.nextInt( 9999 );
+            id = generator.nextInt( 9999  );
         } while( !isUniqueId(id) );
 
         return id;
