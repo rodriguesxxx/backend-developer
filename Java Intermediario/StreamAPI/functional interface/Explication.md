@@ -19,4 +19,8 @@ Não recebe argumentos e retorna resultados do tipo T.
 Aceita um argumento do tipo T e retorna um do tipo R.
 É utilizada para transformar ou mapear do Stream em outros valores.
 
+## Predicate 
+
+Usado para filtros.
+Recebe um valor T e retorna um boolean
 
