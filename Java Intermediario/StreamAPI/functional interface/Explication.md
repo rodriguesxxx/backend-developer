@@ -8,3 +8,9 @@ Qualquer interface que tenha apenas um metodo abstrato, é uma interface funcion
 
 Aceita uma operação que aceita um argumento do tipo T e não retorna nenhum resultado.
 É utilizada para realizar ações ou efeitos colaterias em elementos stream sem modificar ou retornar um valor
+
+## Supplier Interface
+
+Não recebe argumentos e retorna resultados do tipo T.
+É comumente usada para criar ou fornecer novos objetos.
+
