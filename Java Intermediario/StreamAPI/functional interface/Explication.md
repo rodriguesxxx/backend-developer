@@ -14,3 +14,9 @@ Aceita uma operação que aceita um argumento do tipo T e não retorna nenhum re
 Não recebe argumentos e retorna resultados do tipo T.
 É comumente usada para criar ou fornecer novos objetos.
 
+## Function<T,R>
+
+Aceita um argumento do tipo T e retorna um do tipo R.
+É utilizada para transformar ou mapear do Stream em outros valores.
+
+

@@ -1,6 +1,4 @@
-import examples.lojafeliz.CarrinhoDeCompras;
-import examples.lojafeliz.Produto;
-
+package examples.lojafeliz;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
