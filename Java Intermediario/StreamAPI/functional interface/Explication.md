@@ -24,3 +24,6 @@ Aceita um argumento do tipo T e retorna um do tipo R.
 Usado para filtros.
 Recebe um valor T e retorna um boolean
 
+## Binary Operator
+
+Representa uma operacao que combina dois elementos do tipo T e retorna resultados do mesmo tipo.
