@@ -1,0 +1,28 @@
+# Use root/example as user/password credentials
+
+version: '3.1'
+
+services:
+
+  mysqlDB:
+    image: mysql
+    container_name: mysqlDB
+    hostname: mysqlDB
+    restart: always
+
+    command: 
+      - --default-authentication-plugin=caching_sha2_password
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --innodb_force_recovery=0
+
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: backend_study
+      MYSQL_USER: blkd
+      MYSQL_PASSWORD: blkd
+      
+    ports:
+      - 3306:3306
+    
+    
