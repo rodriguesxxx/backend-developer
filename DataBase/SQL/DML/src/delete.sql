@@ -1,0 +1,1 @@
+DELETE FROM People WHERE username = "blkd";
