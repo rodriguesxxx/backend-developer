@@ -1,0 +1,4 @@
+-- DDL - ALTER
+
+ALTER TABLE People 
+ADD email VARCHAR(150);

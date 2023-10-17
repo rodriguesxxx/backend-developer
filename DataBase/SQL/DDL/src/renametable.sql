@@ -1,0 +1,3 @@
+-- DDL - RENAME
+ALTER TABLE People
+RENAME TO Peoples;

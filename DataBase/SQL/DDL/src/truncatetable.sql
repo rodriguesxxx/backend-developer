@@ -1,0 +1,3 @@
+-- DDL - TRUNCATE
+
+TRUNCATE TABLE People;

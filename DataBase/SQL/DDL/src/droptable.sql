@@ -1,0 +1,3 @@
+-- DDL - DROP
+
+DROP TABLE People;
