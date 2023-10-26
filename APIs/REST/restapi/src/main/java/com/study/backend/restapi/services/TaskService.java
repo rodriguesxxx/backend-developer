@@ -22,4 +22,19 @@ public class TaskService {
         taskRepository.save(task);
     }
 
+    public void completedTask(Integer taskID){
+        taskRepository.findById(taskID)
+            .map( task -> { 
+                task.setIsCompleted(true);
+                taskRepository.save(task);
+                return task;
+            } );         
+    }
+
+    public void deleteTask(Integer id){
+        taskRepository.deleteById(id);
+    }
+
+
+
 }
