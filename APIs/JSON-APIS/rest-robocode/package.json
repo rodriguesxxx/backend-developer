@@ -1,0 +1,19 @@
+{
+  "name": "rest-robocode",
+  "version": "1.0.0",
+  "description": "Simple Rest API for studies JSON",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "author": "Daniel Rodrigues",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
