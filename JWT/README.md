@@ -69,3 +69,8 @@ sendo elas:
 A saída são três strings de URL Base64, separadas por ".".
 
 acesse para testes: https://jwt.io/#debugger-io
+
+## Usando na pratica(com Spring boot)
+Usando o spring initializer, adicione a dependencia do Spring Security ao seu projeto.
+
+Após adicionar o Spring Security, os endpoints não "funcionaram" poís uma camada de seguranca foi adicionada. Se voce acessar o endpoint por um navegador será solicitado um login e senha.
