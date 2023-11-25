@@ -1,0 +1,44 @@
+Google Sala de Aula
+Google Sala de Aula
+Introdução aos clusters Kubernetes
+06/11/2023 a 04/12/2023 - Segunda e Quarta - das 9h às 12h
+Início
+Agenda
+Minhas inscrições
+Pendentes
+I
+Introdução aos clusters Kubernetes
+06/11/2023 a 04/12/2023 - Segunda e Quarta - das 9h às 12h
+Turmas arquivadas
+Configurações
+Arquivos Conf.
+Dionisio Leite
+•
+20 de nov.
+
+pod.yaml
+Arquivo desconhecido
+
+criar.yaml
+Arquivo desconhecido
+Comentários da turma
+
+Adicionar comentário para a turma...
+
+Detalhes do material
+apiVersion: v1
+kind: Pod
+metadata:
+  name: static-web1
+  namespace: teste
+  labels:
+    role: myrole
+spec:
+  containers:
+  - name: web
+    image: nginx
+    ports:
+    - name: web
+      containerPort: 8083
+pod.yaml
+Exibindo pod.yaml…
