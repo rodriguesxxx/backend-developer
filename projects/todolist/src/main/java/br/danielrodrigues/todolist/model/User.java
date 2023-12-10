@@ -4,7 +4,9 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -13,6 +15,10 @@ import java.util.Set;
 @Getter @Setter @NoArgsConstructor
 @Table(name = "users")
 public class User {
+
+    @Autowired
+    PasswordEncoder bCrypt;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -39,8 +45,7 @@ public class User {
     }
 
     public void setPassword(String password){
-        BCryptPasswordEncoder bcrypt = new BCryptPasswordEncoder();
-        this.password = bcrypt.encode(password);
+        this.password = bCrypt.encode(password);
     }
 
     public void addRole(Role role){
