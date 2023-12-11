@@ -4,20 +4,21 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.security.core.GrantedAuthority;
 
 import java.util.Objects;
 
 @Entity
 @NoArgsConstructor
 @Table(name = "roles")
-public class Role {
+public class Role implements GrantedAuthority {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(nullable = false)
     private String authority;
 
-    public Role(String authority){
+    public Role(Integer id, String authority){
+        this.id = id;
         this.authority = authority;
     }
 
@@ -29,6 +30,7 @@ public class Role {
         this.id = id;
     }
 
+    @Override
     public String getAuthority() {
         return authority;
     }
