@@ -1,28 +1,35 @@
-## Docker fundamentals
+# O que é docker?
 
-acesse o docker hub: https://hub.docker.com/
-## Principais comandos docker
+O docker cria um container onde voce pode alocar o seu ambiente de desenvolvimento.
+Totalmente isolado, isso quer dizer caso a imagem seja apaga, não ficara nada salvo.
 
-- #### docker pull <image>
-    Instalar imagem do docker hub
+# 3 conceitos fundamentais
 
-- #### docker run <image>
-    
-    roda a imagem
+### - Dockerfile
+É a planta do nosso sistema, onde fica as configuraçãos...
 
-    **princiapais tags**
-    - ##### sleep 10 
-    
-        roda a imagem por 10 seg
-    
-    - ##### -it 
-        
-        i = interactive
+### - Imagem
+É o que será executado.
 
-        t = Allocate a pseudo-TTY
+### - Container
+Onde a imagem é executada.
 
-- #### docker images
-    lista todas as imagens
+# Instalando o docker
 
-- #### docker ps
-    lista os containers em execucao, passando a tag -a é listado os containers executados recentemente.
+
+# Principais comandos
+- docker pull <image>
+- docker run <nome_da_imagem> //executada uma imagem já criada, ou baixa do docker hub
+- docker ps //containers que está em exec
+- docker stop <id_container>
+- docker exec <image> <cmd>
+- docker build -t first-image ./
+- docker run -p 5173:5173 first-image
+- docker volume create <nome>
+- docker run -d \
+--mount source=<nome_volume>,target=/usr/shares/volumes \ <nome_imagem>
+
+
+# Docker Compose
+
+file: docker-compose.yml

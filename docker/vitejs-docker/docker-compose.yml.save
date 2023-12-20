@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  vite:
+    build: ./
+    container_name: vite
+
+networks:
+  default:
+    driver: bridge
