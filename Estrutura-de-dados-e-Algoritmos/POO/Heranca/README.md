@@ -60,7 +60,7 @@ class ClasseDerivada : public ClasseBase {};
 
 ## Multipla Herança
 
-Diferentemente do Java, o C++ permite heranças multiplas. Ou seja, uma classe derivada poderá ter mais de uma **classe base**
+Diferentemente do Java, o C++ permite heranças multiplas. Ou seja, uma classe derivada poderá ter mais de uma.**classe base**
 
 **exemplo:**
 
