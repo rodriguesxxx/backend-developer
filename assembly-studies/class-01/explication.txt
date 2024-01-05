@@ -17,3 +17,6 @@ Um programa em Assembly é definido em 3 seções, sendo elas:
 Para compilar:
 
 	nasm -f elf64 hello.asm
+
+para criar o executavel:
+	ld -s -o hello hello.o
