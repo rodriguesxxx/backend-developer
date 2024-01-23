@@ -47,7 +47,7 @@ Em termos simples, `Ω` fornece um limite inferior para o desempenho de um algor
 
 -   **Relação com O (Big O)**: Enquanto a notação O descreve um limite superior, Ω descreve um limite inferior. Em alguns casos, podemos usar ambas as notações (Ω para inferior e O para superior) para obter uma descrição mais precisa do comportamento assintótico de um algoritmo.
 
-<img src="https://blog.pantuza.com/uploads/2f73cf82965a89f090b2cd9c99a8b307c5cbf7c0" alt="representação da Omega" />
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20210315023845/Untitled-300x229.png" alt="representação da Omega" />
 
 ## Extras
 
