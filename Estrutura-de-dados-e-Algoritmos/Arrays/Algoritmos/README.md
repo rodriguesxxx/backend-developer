@@ -163,6 +163,65 @@ int main() {
 }
 ```
 
+## Percorrendo matriz sem for
+
+<img src="https://blog.da2k.com.br/uploads/2015/02/recursion.jpg">
+
+Dada uma `matriz` de tamanho `N x M` , a tarefa é percorrer essa matriz usando `recursão`.
+
+-   ### Um pouco sobre recursividade
+
+    Recursividade é quando uma `função` chama a si mesma.
+
+    **exemplo:**
+
+    ```cpp
+    void imprimirNome(int quantidadeDeVezes) {
+        if(quantidadeDeVezes > 0) {
+            cout << "Daniel Rodrigues" << endl;
+            imprimirNome(quantidadeDeVezes-1);
+        }
+    }
+
+    int main() {
+        imprimirNome(10);
+        return 0;
+    }
+    ```
+
+    A cada chamada da `função` é subtraído `1` da `quantidade de vezes`, caso essa quantidade seja `0` o programa finaliza a `execução da função`.
+
+-   ### Percorrendo matriz
+
+    Vamos empregar recursividade para realizar essa tarefa.
+
+    **codigo:**
+
+    ```cpp
+    void percorrerVetor(vector<int>& vetor, int index = 0) {
+        if(index < vetor.size()) {
+            cout << vetor[index] <<  " ";
+            percorrerVetor(vetor, index+1);
+        }
+
+    }
+
+    void percorrerMatriz(vector<vector<int>>& matriz, int index = 0) {
+        if(index < matriz.size()) {
+            percorrerVetor(matriz[index]);
+            percorrerMatriz(matriz, index+1);
+        }
+    }
+
+    int main() {
+        vector<vector<int>> matriz = {{1, 2, 3}, {4, 5, 6}};
+        percorrerMatriz(matriz);
+        return 0;
+    }
+    ```
+
+    Existem abordagens mais `sofisticadas` para resolver esse problema, mas optei por uma `solução` que seja `compreensível` para qualquer pessoa
+
 ## Extras
 
 Como mencionei anteriormente, "Happy!" é uma criação da minha imaginação, e o compilador para essa linguagem está na minha mente.
