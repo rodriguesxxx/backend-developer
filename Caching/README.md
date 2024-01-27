@@ -129,6 +129,56 @@ Também podemos `controlar` o `tempo` que determinado `cache` ficara salvo na me
 
 **Observação:** Se você busca alta escalabilidade, desaconselho o uso de `cache em memória`. Recomendo optar pelo `Redis`, pois proporcionará resultados significativamente melhores.
 
+## Cache COM Redis - Spring Boot
+
+O `redis` é um armazenamento de `estrutura de dados` `chave`-`valor`.
+
+É como a estrutura `map` do `Java`
+
+Os principais usos do `Redis` são: `cache`, `gerenciamento de sessões`, `PUB/SUB` e `classificações`.
+
+**obs:** Esse conteúdo é uma continuação desse <a href="https://www.tabnews.com.br/rodriguesxxx/conteudo-a-arte-do-cache-spring-boot">post</a>.
+
+-   ### Como funciona o Cache no Redis
+
+    O Redis é inserido na **frente** de outro **banco de dados** e cria um cache na memória com excelente desempenho para diminuir a latência de acesso.
+
+-   ### Adicionando a dependência
+
+    No arquivo `pom.xml` adicione a `dependência` do redis
+
+    ```xml
+    <dependency>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+    </dependency>
+    ```
+
+-   ### Configurando aplicação
+
+    Abra o arquivo `application.properties` e adicione a seguinte linha:
+
+    ```properties
+    spring.cache.type=redis
+    ```
+
+-   ### Deixando Model Serializavel
+
+    **exemplo**:
+
+    ```java
+    import java.io.Serializable;
+
+    public class Stats implements Serializable {}
+    ```
+
+-   ### Rodando imagem Redis - Para testes
+    ```bash
+    docker run --name insighthub-redis -p 6379:6379 -d redis
+    ```
+    **Fácil, ne?**
+
 ## Extras
 
 Mais sobre cache: https://medium.com/@genchilu/cache-strategy-in-backend-d0baaacd2d79
