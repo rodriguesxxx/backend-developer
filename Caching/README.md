@@ -131,6 +131,8 @@ Também podemos `controlar` o `tempo` que determinado `cache` ficara salvo na me
 
 ## Cache COM Redis - Spring Boot
 
+<img src="https://architecturenotes.co/content/images/2022/07/Redis-v2-separate-05.jpg" />
+
 O `redis` é um armazenamento de `estrutura de dados` `chave`-`valor`.
 
 É como a estrutura `map` do `Java`
@@ -175,7 +177,7 @@ Os principais usos do `Redis` são: `cache`, `gerenciamento de sessões`, `PUB/S
 
 -   ### Rodando imagem Redis - Para testes
     ```bash
-    docker run --name insighthub-redis -p 6379:6379 -d redis
+    docker run --name my-redis -p 6379:6379 -d redis
     ```
     **Fácil, ne?**
 
