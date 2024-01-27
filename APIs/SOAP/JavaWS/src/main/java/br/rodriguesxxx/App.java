@@ -1,13 +1,16 @@
 package br.rodriguesxxx;
 
-/**
- * Hello world!
- *
- */
-public class App 
+import java.util.Date;
+
+import br.rodriguesxxx.services.DaysOfLifeService;
+import jakarta.xml.ws.Endpoint;
+
+public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        DaysOfLifeService daysOfLifeService = new DaysOfLifeService();
+        Endpoint.publish("http://localhost:8080/service/daysOfLife", daysOfLifeService);
+        System.out.println("service is live!");
     }
 }
