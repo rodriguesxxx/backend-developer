@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "91bfa154aad2b28d",
+        "id": "1e093028fbc9c93c",
         "type": "tabs",
         "children": [
           {
-            "id": "cab4be3dca228973",
+            "id": "f4a55dc3d3f1d8f5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/README.md.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 398.5086555480957
   },
   "right": {
     "id": "1bc4a641fcc20485",
@@ -81,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring Framework/Spring Boot/Componentes-e-Injecao-de-Dependencia/inversao-de-controle-e-injecao-de-dependencia/README.md",
+                "file": "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/README.md.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring Framework/Spring Boot/Componentes-e-Injecao-de-Dependencia/inversao-de-controle-e-injecao-de-dependencia/README.md",
+                "file": "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/README.md.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring Framework/Spring Boot/Componentes-e-Injecao-de-Dependencia/inversao-de-controle-e-injecao-de-dependencia/README.md"
+                "file": "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/README.md.md"
               }
             }
           }
@@ -142,8 +146,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "34a428027eabacc6",
+  "active": "f4a55dc3d3f1d8f5",
   "lastOpenFiles": [
+    "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/Untitled.canvas",
+    "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/img/logic-linked.png",
+    "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/README.md.md",
+    "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/Untitled.md",
+    "Estrutura-de-dados-e-Algoritmos/Listas/img/mapa.png",
+    "Estrutura-de-dados-e-Algoritmos/Listas/README.md.md",
+    "Estrutura-de-dados-e-Algoritmos/Listas/img",
+    "Estrutura-de-dados-e-Algoritmos/Listas/ILLUSTRATION.canvas",
+    "Estrutura-de-dados-e-Algoritmos/Listas/imgs",
+    "Estrutura-de-dados-e-Algoritmos/Listas",
     "Java/Java Intermediario/StreamAPI/lambda/explication.md",
     "APIs/Swagger/api-swagger/vendor/voku/portable-ascii/README.md",
     "APIs/Swagger/api-swagger/vendor/spatie/ignition/README.md",
