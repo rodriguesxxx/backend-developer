@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"96148d422c69b3b3","type":"text","text":"POST TABNEWS","x":-80,"y":24,"width":140,"height":50,"color":"1"},
+		{"id":"667b79e4d8e8f990","type":"text","text":"ESTUDAR BACKEND","x":-320,"y":22,"width":140,"height":52,"color":"2"},
+		{"id":"4b78645745bbd2a9","type":"text","text":"ESCOVAR DENTES","x":140,"y":24,"width":140,"height":50,"color":"4"},
+		{"id":"b5c77b92df0fa77e","type":"text","text":"ESTUDAR BACKEND","x":-320,"y":160,"width":140,"height":52,"color":"2"},
+		{"id":"ea8dbd323b1eee5a","type":"text","text":"ESCOVAR DENTES","x":140,"y":162,"width":140,"height":50,"color":"4"},
+		{"id":"454761a640f26a8d","type":"text","text":"POST TABNEWS","x":-80,"y":212,"width":140,"height":50,"color":"1"}
+	],
+	"edges":[
+		{"id":"5abbf930c39e9e73","fromNode":"667b79e4d8e8f990","fromSide":"right","toNode":"96148d422c69b3b3","toSide":"left"},
+		{"id":"25042d092975e710","fromNode":"96148d422c69b3b3","fromSide":"right","toNode":"4b78645745bbd2a9","toSide":"left"},
+		{"id":"fc9f2592c6f103fa","fromNode":"b5c77b92df0fa77e","fromSide":"right","toNode":"ea8dbd323b1eee5a","toSide":"left"}
+	]
+}

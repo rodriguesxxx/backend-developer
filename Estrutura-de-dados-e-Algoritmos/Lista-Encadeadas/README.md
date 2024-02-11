@@ -92,3 +92,104 @@ comeco <- 2;
 Usaremos a variavel `comeco` como `referência` ao ponto de partida da lista e o valor `0` ou `null` como final.
 
 <img src="img/logic-linked.png">
+
+## Manipulação
+
+As **operações mais comuns** em **listas encadeadas** são a **inserção** e a **remoção**. O objetivo deste artigo é **destacar alguns pontos importantes** sobre esse tema. Caso você não saiba o que são **listas encadeadas**, recomendo acessar o **artigo anterior** que trata desse assunto.
+
+### Inserção
+
+Nas **listas encadeadas**, as posições não são tão importantes. Isso ocorre devido à **independência dos elementos**; cada elemento pode estar logicamente encadeado em **qualquer lugar da lista**.
+
+Diferentemente de estruturas como **pilhas** e **filas**, as listas encadeadas oferecem mais liberdade. Você pode **inserir elementos no início, meio ou final** da lista, e até mesmo **ordená-los de forma crescente ou decrescente**. Além disso, a **remoção** também pode ocorrer em qualquer parte da lista.
+
+Dada a seguinte lista encadeada:
+
+**começo: 2**
+
+<table border="1">
+    <thead>
+        <th>#</th>
+        <th>Item</th>
+        <th>Próximo</th>
+    </thead>
+    <tbody>
+        <td>1</td>
+        <td>Dormir</td>
+        <td>Final</td>
+        </tr>
+        <td>2</td>
+        <td>Estudar backend</td>
+        <td>4</td>
+        </tr>
+        <td>3</td>
+        <td>Escovar Dentes</td>
+        <td>1</td>
+        </tr>
+        <td>4</td>
+        <td>Post Tabnews</td>
+        <td>3</td>
+    </tbody>
+</table>
+
+Insira a seguinte tarefa: **Pratica de inglês**
+
+**Inserção no INICIO**
+
+<img src="img/start-insert.png">
+
+```pascal
+VET[5].prox <- comeco; //PRIMEIRO PASSO
+começo <- 5; // SEGUNDO PASSO
+```
+
+**Inserção no MEIO**
+
+<img src="img/mid-insert.png">
+
+```pascal
+VET[5].prox <- VET[2].prox; //PRIMEIRO PASSO
+VET[2].prox <- 5; // SEGUNDO PASSO
+```
+
+**Inserção no FINAL**
+
+<img src="img/end-insert.png">
+
+```pascal
+VET[5].prox <- null; //PRIMEIRO PASSO
+VET[1].prox <- 5; // SEGUNDO PASSO
+```
+
+Notou algo? Está havendo uma repetição de código desnecessária. Portanto, vamos criar um método para inserir valores em nossa lista.
+
+```pascal
+modulo inserir(int: novo, int: antecessor) {
+	VET[novo].prox <- antecessor;
+	antecessor <- novo;
+}
+```
+
+Reduzimos as inserções a:
+
+```pascal
+inserir(5, comeco); //INSERI NO INICIO
+inserir(5, VET[2].prox); //INSERI NO MEIO
+inserir(5, VET[1].prox); //INSERI NO FINAL
+```
+
+### Remoção
+
+Para um fácil entendimento, considere que os elementos removidos são ‘desligados’ da lista, ou seja, **desvinculados**. Não se preocupe com **memória** ou algo do tipo.
+
+**Exemplo de remoção**
+
+<img src="img/remove.png">
+
+```pascal
+VET[2].prox <- VET[4].prox;
+```
+
+Claro que existem formas para otimizar tanto a **inserção** quanto a **remoção**. No entanto, a base de tudo é essa.
+
+Agradeço pela a atenção! 🚀
