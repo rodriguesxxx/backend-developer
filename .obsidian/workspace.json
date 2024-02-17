@@ -4,15 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "1e093028fbc9c93c",
+        "id": "37fc63fbddc47d4a",
         "type": "tabs",
         "children": [
           {
-            "id": "f4a55dc3d3f1d8f5",
+            "id": "d50d738c9997b12a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "canvas",
+              "state": {
+                "file": "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/REMOVE.canvas",
+                "viewState": {
+                  "x": -1.9613316581412032,
+                  "y": 152.13812661358298,
+                  "zoom": -0.4000000000000006
+                }
+              }
             }
           }
         ]
@@ -81,6 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/REMOVE.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/REMOVE.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +127,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/REMOVE.canvas"
+              }
             }
           }
         ]
@@ -138,13 +149,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f4a55dc3d3f1d8f5",
+  "active": "d50d738c9997b12a",
   "lastOpenFiles": [
-    "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/README.md.md",
+    "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/img/remove.png",
+    "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/INSERT.canvas",
+    "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/img/end-insert.png",
+    "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/img/mid-insert.png",
     "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/README.md",
-    "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/Untitled.canvas",
-    "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/img/logic-linked.png",
+    "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/img/start-insert.png",
+    "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/REMOVE.canvas",
     "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/Untitled.md",
+    "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/img/Untitled.canvas",
+    "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/README.md.md",
+    "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/img/logic-linked.png",
     "Estrutura-de-dados-e-Algoritmos/Listas/img/mapa.png",
     "Estrutura-de-dados-e-Algoritmos/Listas/README.md.md",
     "Estrutura-de-dados-e-Algoritmos/Listas/img",
