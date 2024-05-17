@@ -11,15 +11,8 @@
             "id": "d50d738c9997b12a",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/REMOVE.canvas",
-                "viewState": {
-                  "x": -1.9613316581412032,
-                  "y": 152.13812661358298,
-                  "zoom": -0.4000000000000006
-                }
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -88,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/REMOVE.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/REMOVE.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/REMOVE.canvas"
-              }
+              "state": {}
             }
           }
         ]
@@ -151,13 +140,13 @@
   },
   "active": "d50d738c9997b12a",
   "lastOpenFiles": [
+    "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/REMOVE.canvas",
     "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/img/remove.png",
     "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/INSERT.canvas",
     "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/img/end-insert.png",
     "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/img/mid-insert.png",
     "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/README.md",
     "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/img/start-insert.png",
-    "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/REMOVE.canvas",
     "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/Untitled.md",
     "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/img/Untitled.canvas",
     "Estrutura-de-dados-e-Algoritmos/Lista-Encadeadas/README.md.md",
