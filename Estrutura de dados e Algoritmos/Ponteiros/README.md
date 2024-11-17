@@ -127,3 +127,80 @@ int main() {
     return 0;
 }
 ```
+
+## Ponteiros e Construtores de Cópias
+
+A cópia de dados de um objeto para outro, pode causar alguns problemas. Um deles é cópia inadequada de ponteiros de um objeto para outro.
+
+**Exemplificação**
+
+```cpp
+struct Pessoa {
+    char* nome;
+    int idade;
+
+    Pessoa(const char *nome = "", int idade = 0) {
+        this->nome = new char[strlen(nome) + 1];
+        strcpy(this->nome, nome);
+        this->idade = idade;
+    }
+};
+
+int main() {
+
+    Pessoa p1("Daniel", 18), p2(p1); //copia o objeto p1 para p2
+
+    strcpy(p2.nome, "Leinad"); //altera o nome de p2(só que NÃO)
+    p2.idade = 108;
+
+    cout << p1.nome << endl; //Leinad
+    cout << p1.idade << endl; //18
+
+    return 0;
+}
+
+```
+
+Quando `p2` recebe uma cópia de `p1`, o compilador cria por padrão um `construtor de cópia`, só que quando se tem um ponteiro como membro(no caso o `nome`), o que é passado na cópia é o endereço na memória, não o valor. Por isso `p2.nome` é uma referência a `p1.nome`, em outras palavras, `p2.nome` aponta para `p1.nome`.
+
+**Solucionando o problema**
+
+Para resolver isso, precisamos nós mesmos implementar o nosso construtor de cópia.
+
+```cpp
+struct Pessoa {
+    char* nome;
+    int idade;
+
+    Pessoa(const char *nome = "", int idade = 0) {
+        this->nome = new char[strlen(nome) + 1];
+        strcpy(this->nome, nome);
+        this->idade = idade;
+    }
+
+    Pessoa(const Pessoa& p) {
+        this->nome = new char[strlen(p.nome) + 1];
+        strcpy(this->nome, p.nome); //assim é copiado o valor, não a referencia.
+        this->idade = p.idade;
+    }
+
+};
+
+int main() {
+
+    Pessoa p1("Daniel", 18), p2(p1); //copia o objeto p1 para p2
+
+    strcpy(p2.nome, "Leinad"); //altera o nome de p2
+    p2.idade = 108;
+
+    cout << p1.nome << endl; //Daniel
+    cout << p2.nome << endl; //Leinad
+
+    return 0;
+}
+
+```
+
+### Problema da atribuição!
+
+O operador de atribuição sofre um problema parecido.
