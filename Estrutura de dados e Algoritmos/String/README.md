@@ -118,3 +118,7 @@ int main() {
 Dessa forma podemos utilizar a `String` semelhantemente a outras `estruturas`.
 
 **_Calma `JavaScripto` sei que essa solução não é a mais otimizada e que a maioria das linguagens tem nativamente a `string`._**
+
+
+### STD::STRING Funções
+- #### std::reverse
