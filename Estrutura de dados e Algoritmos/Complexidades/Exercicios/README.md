@@ -32,7 +32,7 @@ int main() {
 
 **Pergunta:** Qual a complexidade desse algoritmo?
 
-**Resposta:** *_0(n)_*
+**Resposta:** _*0(n)*_
 
 ---
 
@@ -43,10 +43,33 @@ Implemente um algoritmo que conta quantas vezes um determinado elemento aparece 
 ```c
 // Entrada: array=[1, 2, 3, 2, 2, 4], elemento=2
 // Saída esperada: 3
+#include<stdio.h>
+
+int count(int arr[], int n, int element) {
+    int count = 0;
+
+    for(int i = 0; i < n; i++) { //0(n)
+        if(arr[i] == element) count++; //0(1)
+    }
+
+    return count;
+}
+
+int main() {
+    int arr[] = {1, 2, 3, 2, 2, 4};
+    int size = sizeof(arr)/sizeof(arr[0]);
+
+    printf("%d\n", count(arr, size, 2));
+
+    return -1;
+}
+
+//complexidade: 0(n)
 ```
 
 **Pergunta:** Qual a complexidade desse algoritmo?
 
+**Resposta:** _*0(n)*_
 ---
 
 ### Exercício 3: Verificar se um Array está Ordenado
