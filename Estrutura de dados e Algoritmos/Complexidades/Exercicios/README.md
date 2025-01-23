@@ -145,13 +145,63 @@ int main() {
 
 Implemente um algoritmo para encontrar o segundo maior elemento de um array de números inteiros.
 
+**Implementação em C**
+
 ```c
 // Entrada: [1, 3, 4, 5, 2]
 // Saída esperada: 4
+#include<stdio.h>
 
+int second_largest(int arr[], size_t n) {
+    int largest = arr[0];
+    int second_largest = largest;
+    for(int i = 1; i < n; i++) { //0(n - 1)
+        if(arr[i] > largest) {
+            second_largest = largest;
+            largest = arr[i];
+        }
+    }
+
+    return second_largest;
+}
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5}; //4
+    size_t size = sizeof(arr)/sizeof(arr[0]);
+
+    printf("%d\n", second_largest(arr, size));
+
+    return -1;
+}
+```
+
+**Implementação em C++**
+
+```cpp
+#include<iostream>
+#include<vector>
+#include<algorithm>
+
+int second_largest(std::vector<int> arr) {
+    int n = arr.size(); //0(1)
+    std::sort(arr.begin(), arr.end()); //0( n * log(n) )
+    return arr[n - 2];
+}
+
+int main() {
+    std::vector<int> arr = {5, 4, 3, 2, 1};
+    std::cout << second_largest(arr);
+    return 0;
+}
 ```
 
 **Pergunta:** Qual a complexidade desse algoritmo?
+
+**Resposta em C:** _*0(n)*_
+
+**Resposta em C++:** __0(n * log(n))__
+
+Nem sempre a implementação mais simples é a mais eficaz!
 
 ---
 
