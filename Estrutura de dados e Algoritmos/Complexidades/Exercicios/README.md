@@ -205,7 +205,7 @@ Nem sempre a implementação mais simples é a mais eficaz!
 
 ---
 
-### Exercício 5: Subarray com Soma Máxima (Kadane)
+### Exercício 5: Subarray com Soma Máxima (   )
 
 Implemente o algoritmo de Kadane para encontrar a soma máxima de um subarray contíguo em um array de números inteiros.
 
