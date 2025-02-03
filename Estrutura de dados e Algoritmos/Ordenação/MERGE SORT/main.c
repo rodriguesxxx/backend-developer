@@ -1,51 +1,36 @@
 #include<stdio.h>
 
-struct Size {
-    int a1;
-    int a2;
-};
 
-void merge(int a1[], int a2[], int a[], struct Size sizes) {
+void merge(int arr[], int begin, int mid, int end) {
+
+    int arr_aux[end - begin + 1];
     
-    int i = 0, j = 0, k = 0;
+    end++;
 
-    while(i < sizes.a1 && j < sizes.a2) {
-        if(a1[i] <= a2[j]) {
-            a[k] = a1[i];
-            i++;
-        } else {
-            a[k] = a2[j];
-            j++;
-        }
-
-        k++;
+    int i = begin, j = mid, k = 0;
+    
+    while(i < mid && j < end) {
+        if(arr[i] <= arr[j]) arr_aux[k++] = arr[i++];
+        else arr_aux[k++] = arr[j++];
     }
 
-    while(i < sizes.a1) {
-        a[k++] = a1[i++];
-    }
+    while(i < mid) arr_aux[k++] = arr[i++];
 
-    while(j < sizes.a2) {
-        a[k++] = a2[j++];
-    }
+    while(j < end) arr_aux[k++] = arr[j++];
 
+    for(i = begin, k = 0; i < end; i++, k++) {
+        arr[i] = arr_aux[k]; 
+    }
 }
 
 int main() {
-    struct Size sizes;
     
-    int a1[] = {7, 10, 19, 20};
-    sizes.a1 = sizeof(a1)/sizeof(a1[0]);
+    int arr[] = {5, 6, 7, 8, 1, 2, 3, 4, 5};
+    int n = sizeof(arr)/sizeof(arr[0]);
 
-    int a2[] = {9, 12, 17, 21, 22, 23};
-    sizes.a2 = sizeof(a2)/sizeof(a2[0]);
-
-    int a[sizes.a1 + sizes.a2];
-
-    merge(a1, a2, a, sizes);
-    
-    for(int i = 0; i < sizes.a1 + sizes.a2; i++) {
-        printf("%d ", a[i]);
+    merge(arr, 0, 4, n);
+    for(int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
     }
     printf("\n");
 
