@@ -1,12 +1,9 @@
 #include<stdio.h>
 
-
-void merge(int arr[], int begin, int mid, int end) {
+static void merge(int arr[], int begin, int mid, int end) {
 
     int arr_aux[end - begin + 1];
     
-    end++;
-
     int i = begin, j = mid, k = 0;
     
     while(i < mid && j < end) {
@@ -23,12 +20,21 @@ void merge(int arr[], int begin, int mid, int end) {
     }
 }
 
+void sort(int arr[], int begin, int end) {
+    if(begin < end - 1) {
+        int mid = (begin + end) / 2;
+        sort(arr, begin, mid);
+        sort(arr, mid, end);
+        merge(arr, begin, mid, end);
+    }
+}
+
 int main() {
     
-    int arr[] = {5, 6, 7, 8, 1, 2, 3, 4, 5};
+    int arr[] = {3,2,4,2,1,4,5,3,24};
     int n = sizeof(arr)/sizeof(arr[0]);
 
-    merge(arr, 0, 4, n);
+    sort(arr, 0, n);
     for(int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
